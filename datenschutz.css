@@ -1,0 +1,134 @@
+.mobilemenu {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 175, 146);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.navigation-bar {
+    color:black;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.navigation-bar a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Pompiere', cursive;
+    font-size: 25;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.navigation-bar a:hover {
+    transform: scale(1.1);
+    text-shadow:
+     0 0 10px #FFFFFF,
+     0 0 20px #FFFFFF,
+     0 0 30px #FFFFFF,
+     0 0 40px rgb(241, 148, 107),
+     0 0 70px rgb(241, 148, 107),
+     0 0 80px rgb(241, 148, 107),
+     0 0 100px rgb(241, 148, 107),
+     0 0 150px rgb(241, 148, 107);
+}
+
+.p8 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Pompiere', cursive;
+    font-size: 25;
+}
+
+
+@media(max-width: 500px) {
+
+    .icon-row {
+        justify-content: center;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .mobilemenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Pompiere', cursive;
+        font-size: 21;
+        overflow: hidden;
+        height: 0px;
+        width: 70%;
+        transition: all 500ms ease-in-out;
+    }
+
+    .mobilemenu a {
+        display: flex;
+        justify-content: center;
+        padding-top: 20;
+        color: white;
+        text-decoration: none;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .mobilemenu a:hover {
+        transform: scale(1.1);
+    }
+
+    .show-mobilemenu {
+        height: 270px;
+        border-top: 1px solid white;
+    }
+
+    .responsive-menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        background-color: rgb(160, 160, 160);
+    }
+
+    .menu-button {
+        display: flex;
+        background-color: rgb(245, 175, 146);
+        font-family: 'Bad Script', cursive;
+        font-size: 20;
+        font-weight: bold;
+        width: 80;
+        height: 30;
+        margin-bottom: 20px;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .p8 {
+        width: 300px;
+    }
+    
+}
