@@ -565,6 +565,49 @@ body {
     background-color: grey;
 }
 
+.Mail {
+    display: flex;  
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    font-size: 20;
+    color: rgb(245, 175, 146);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.Mail-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: rgb(245, 175, 146);
+    font-family: 'Pompiere', cursive;
+    font-weight: bold;
+    font-size: 22;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+    border: 1 solid black;
+    border-style: groove;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.Mail-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(251, 220, 206);
+}
+
+.Mail-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 /*for a nicer view*/
 @media(max-width: 1196px) {
